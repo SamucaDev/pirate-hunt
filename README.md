@@ -30,7 +30,7 @@ Pirate Hunt is a simple, yet engaging roulette game inspired by the popular anim
 ## Project Structure
 
 The project structure is as follows:
-
+```
 Pirate-Hunt/
 ├── css/
 │ └── style.css
@@ -54,7 +54,7 @@ Pirate-Hunt/
 │ └── main.js
 ├── index.html
 └── README.md
-
+```
 ## Logic Explanation
 
 The game logic is implemented using JavaScript. Here is a brief overview of the main components:
