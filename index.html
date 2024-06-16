@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pirate Hunt is a fun roulette game where you earn points in Beris by aligning 3 characters from the anime One Piece."
+    />
+    <meta
+      name="keywords"
+      content="Pirate Hunt, One Piece game, roulette game, anime game, Beris points, non-commercial game"
+    />
+    <meta name="author" content="Samuel" />
+    <meta property="og:title" content="Pirate Hunt Game" />
+    <meta
+      property="og:description"
+      content="Earn points in Beris by aligning 3 characters from One Piece in this fun roulette game."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2022/06/10/5276d02e-5217-4f55-91a2-7d60186a6038_162e016e.jpg?itok=HKb0wHWX&v=1654844323"
+    />
+    <meta property="og:url" content="https://piratehunt.samuelrodrigues.dev/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pirate Hunt Game" />
+    <meta
+      name="twitter:description"
+      content="Earn points in Beris by aligning 3 characters from One Piece in this fun roulette game."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2022/06/10/5276d02e-5217-4f55-91a2-7d60186a6038_162e016e.jpg?itok=HKb0wHWX&v=1654844323"
+    />
+    <title>Pirate Hunt Game</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script type="module" src="./src/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <button id="silent-music">
+          <img
+            class="image-select-music"
+            id="icon-mute"
+            style="display: block"
+            src="./src/assets/images/mute.png"
+          />
+          <img
+            class="image-select-music"
+            id="icon-unmute"
+            style="display: none"
+            src="./src/assets/images/volume.png"
+          />
+        </button>
+      </div>
+      <h1 class="game-title">
+        <img
+          class="header-image"
+          src="./src/assets/images/one-piece-image.png"
+        />
+      </h1>
+      <div class="slots">
+        <div class="reward">
+          <div id="points" class="flex-center flex-row">
+            <img class="icon-beri" src="./src/assets/images/beri.png" />
+            <p class="value-reward">0</p>
+          </div>
+        </div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+      </div>
+
+      <div id="options">
+        <div class="points">
+          <img class="icon-beri" src="./src/assets/images/beri-dark.png" />
+          <p id="score">0</p>
+        </div>
+        <button id="spin" class="button">Spin</button>
+      </div>
+    </div>
+
+    <audio id="game-music" src="/src/assets/sounds/game-music.mp3"></audio>
+
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="flex-center flex-column modal-information">
+          <h2 class="modal-title">Welcome to the Pirate Hunt Game!</h2>
+          <p class="modal-description">
+            This is a roulette game where you can earn points in Beris by
+            aligning the 3 characters.
+          </p>
+          <p class="modal-description">
+            The characters are from the anime One Piece.
+          </p>
+          <p class="modal-description">
+            How many Beris can you make? Are you feeling lucky today?
+          </p>
+
+          <button id="startGame" class="button">Start play</button>
+        </div>
+        <div id="copyright">
+          <p class="copyright">
+            © This is a non-commercial project. The images and characters of One
+            Piece are properties of Toei Animation and Eiichiro Oda. No
+            copyright infringement intended.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
